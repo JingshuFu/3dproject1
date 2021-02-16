@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN) == LOW) //判断按键是否按下，按键按下时为低电平
+  if (digitalRead(BUTTON_PIN) == LOW) 
   {
     showType++;
     switch (showType) {
@@ -133,7 +133,7 @@ void loop() {
         showType = 0;
         break;
     }
-    while (!digitalRead(BUTTON_PIN)); //按键释放时候退出while循环，防止按键按下多次触发
+    while (!digitalRead(BUTTON_PIN)); 
   }
 }
 
